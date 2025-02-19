@@ -1,48 +1,59 @@
+/* Images styling */
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
 
 
-
+/* gallery container styling */
 .gallery {
+  width: 600px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-rows: 2fr 2fr;
+  gap: 5px;
+}
+
+/* Styling for elements inside the flex container */
+.box {
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgb(28, 192, 252);
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+/* Flexbox container styling */
+.flex-container {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+/* Adjusting layout for tablets */
+@media (max-width: 1024px) {
+  .gallery {
+    width: 600px;
     display: grid;
-    column-gap: 10px;
-    grid-template-columns: repeat(3,1fr); ;
-    background-color: white;  
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    gap: 5px;
+  }
 }
 
-
-.gallery > div {
-    background-color: #f1f1f1;
-    border: 1px solid black;
-    font-size: 30px;
-    text-align: center;
+/* Adjusting layout for mobile phones */
+@media (max-width: 600px) {
+  .gallery {
+    width: 600px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    gap: 5px;
   }
-
-  @media (max-width: 800px) {
-    .gallery {
-        grid-template-columns: repeat(1,1fr); 
-    }
 }
-
-
-
-  .flex-container{
-    display: flex;
-    flex-direction: row;
-    background-color: bisque;
-  }
-
-
-  .flex-container>div{
-    background-color:skyblue;
-    width: 300px;
-    margin: 10px;
-    border-radius: 20px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-  }
-
-
-
-
-  
-
