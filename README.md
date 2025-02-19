@@ -1,1 +1,1 @@
-This is a task to practice CSS responsiveniss using query media and layout styling using grid and flexbox
+This repository contains a webpage for Assignment Day 2 (Class Activity), focusing on CSS responsiveness using media queries and flexible layouts with Grid and Flexbox.
